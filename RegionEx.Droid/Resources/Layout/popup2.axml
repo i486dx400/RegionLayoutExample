@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/RegionEx.Droid"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_height="500dp"
+    android:minWidth="500dp"
+    android:minHeight="500dp"
+    android:clickable="true"
+    android:background="#005555">
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="30sp"
+        local:MvxBind="Text Title" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="30sp"
+        local:MvxBind="Text Comment" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="30sp"
+        local:MvxBind="Text Both" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Close 2"
+        local:MvxBind="Click Parent.ClosePopup" />
+</LinearLayout>

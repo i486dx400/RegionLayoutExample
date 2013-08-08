@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <!-- Define Navigation Region -->
+        <FrameLayout
+            android:id="@+id/NavigationRegion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    <!-- Define Main Region -->
+        <FrameLayout
+            android:id="@+id/MainRegion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<!-- Add a transparent background that the user can click on to close the popup -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        local:MvxBind="Click ClosePopup; Visibility ShowPopup, Converter=Visibility">
+    <!-- Define Popup Region -->
+        <FrameLayout
+            android:id="@+id/PopupRegion"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/RegionEx.Droid"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:minHeight="100dp"
+    android:background="#550000">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="First Navigation Screen"
+        android:textSize="20sp" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show Main 1"
+        local:MvxBind="Click Parent.FirstMain" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show Main 2"
+        local:MvxBind="Click Parent.SecondMain" />
+</LinearLayout>
