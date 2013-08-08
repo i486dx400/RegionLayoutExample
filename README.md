@@ -11,6 +11,7 @@ Uses MvvmCross and creates an android app.
 
 
 Before building, use NuGet to pull in these packages for each project:
+
 RegionEx.Core
  - MvvmCross
 
