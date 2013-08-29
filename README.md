@@ -1,3 +1,6 @@
+Deprecated: Use https://github.com/i486dx400/MultiRegionPresenter.git
+
+
 Region Layout Example
 ============
 
